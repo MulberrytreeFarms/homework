@@ -1,0 +1,70 @@
+// 랭킹 리스트 박스
+.rank-list {
+  width: 1200px;
+  padding: 1rem 0;
+  margin: 0 auto;
+  >ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    >li {
+      width: calc(50% - 2rem);
+      padding: 1rem;
+      border: 1px solid #ccc;
+      margin: 1rem;
+    }
+  }
+  @media (max-width: 1200px) {
+    width: 100%;
+    >ul>li {
+      width: 100%;
+      // margin: 1rem 0;
+    }
+  }
+}
+
+.comics-wrapper {
+  display: flex;
+}
+
+// 썸네일
+.img-wrapper {
+  figcaption {
+    display: none;
+  }
+}
+
+// 랭크
+.rank-wrapper {
+  padding: 0 1rem;
+  p {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .rank-up {
+    color: rgb(255, 59, 59);
+  }
+  .rank-down {
+    color: rgb(47, 113, 255);
+  }
+}
+
+// 만화 정보 
+.info-wrapper {
+  position: relative;
+  padding: .6rem;
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// 작가 정보
+.artist-list {
+  // display: flex;
+  li {
+    display: inline-block;
+    margin-right: .2rem;
+  }
+}

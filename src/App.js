@@ -1,13 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
-import './App.css';
+import '@/styles/Reset.scss';
+import './styles/App.scss';
+
+import Header from './components/Header'
+import Filter from './components/Filter'
+import RankList from './components/RankList'
 
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Filter />
+      <RankList />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
           Edit <code>src/App.js</code> and save to reload.
