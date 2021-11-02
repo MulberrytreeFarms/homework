@@ -1,10 +1,10 @@
 import React from 'react';
-import '@/styles/Header.scss'
+import '..//styles/Header.scss'
 
-function Header() {
+function Header({title}) {
   return (
     <header className="header">
-      <h1>로맨스 장르 랭킹</h1>
+      <h1>{title} 장르 랭킹</h1>
     </header>
   )
 }

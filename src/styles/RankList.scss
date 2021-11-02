@@ -1,7 +1,14 @@
+.App {
+  padding: 1rem;
+}
+
+$gray-color: #ccc;
+
 // 랭킹 리스트 박스
 .rank-list {
+  position: relative;
   width: calc(1200px - 2rem);
-  padding: 1rem 0;
+  padding: 1rem 0 240px;
   margin: 0 auto;
   >ul {
     display: flex;
@@ -10,7 +17,7 @@
     >li {
       width: calc(50% - 2rem);
       padding: 1rem;
-      border: 1px solid #ccc;
+      border: 1px solid $gray-color;
       margin: 1rem;
     }
   }
@@ -71,9 +78,13 @@
 
 // 로딩 박스
 .loading-wrapper {
+  position: absolute;
+  bottom : 2rem;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60%;
   padding: 2rem 0;
   margin: 4rem auto;
-  background: #ccc;
+  background: $gray-color;
   text-align: center;
 }

@@ -1,12 +1,4 @@
-const WEEK = {
-  MON: '월',
-  TUE: '화',
-  WED: '수',
-  THU: '목',
-  FRI: '금',
-  SAT: '토',
-  SUN: '일'
-}
+import { WEEK_OBJ } from '../models/comics'
 
 export const comicsList = (data) => { // 만화 리스트
   return (
@@ -62,7 +54,7 @@ export const filterSchedule = (state, {periods}) => { // 연재 요일, 완결 �
   if(periods.length > 0) {
     return (
       periods.map((v, k) => 
-        <span key={k}>매주 {WEEK[v]}요일 연재</span>
+        <span key={k}>매주 {WEEK_OBJ[v]}요일 연재</span>
       )
     )
   }

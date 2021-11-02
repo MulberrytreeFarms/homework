@@ -1,8 +1,10 @@
+$gray-color: #ccc;
+
 .filter-wrapper {
   display: flex;
   padding: 1rem;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid $gray-color;
+  border-bottom: 1px solid $gray-color;
   // margin: 0 -.5rem;
 
   li {
@@ -15,7 +17,7 @@
 
   button {    
     padding: .5rem;
-    border: 1px solid #ccc;
+    border: 1px solid $gray-color;
     border-radius: 4px;
   }
 }
